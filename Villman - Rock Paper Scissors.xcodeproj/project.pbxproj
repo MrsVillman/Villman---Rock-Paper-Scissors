@@ -13,7 +13,8 @@
 		2A81495F287CEA3E00063C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A81495D287CEA3E00063C9F /* Main.storyboard */; };
 		2A814961287CEA4300063C9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A814960287CEA4300063C9F /* Assets.xcassets */; };
 		2A814964287CEA4300063C9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A814962287CEA4300063C9F /* LaunchScreen.storyboard */; };
-		2A81496C287CEB1800063C9F /* sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81496B287CEB1800063C9F /* sign.swift */; };
+		2A81496C287CEB1800063C9F /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81496B287CEB1800063C9F /* Sign.swift */; };
+		2A81496E287CEE2700063C9F /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81496D287CEE2700063C9F /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		2A814960287CEA4300063C9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A814963287CEA4300063C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A814965287CEA4300063C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2A81496B287CEB1800063C9F /* sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sign.swift; sourceTree = "<group>"; };
+		2A81496B287CEB1800063C9F /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
+		2A81496D287CEE2700063C9F /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,8 @@
 				2A814960287CEA4300063C9F /* Assets.xcassets */,
 				2A814962287CEA4300063C9F /* LaunchScreen.storyboard */,
 				2A814965287CEA4300063C9F /* Info.plist */,
-				2A81496B287CEB1800063C9F /* sign.swift */,
+				2A81496B287CEB1800063C9F /* Sign.swift */,
+				2A81496D287CEE2700063C9F /* GameState.swift */,
 			);
 			path = "Villman - Rock Paper Scissors";
 			sourceTree = "<group>";
@@ -143,7 +146,8 @@
 			files = (
 				2A81495C287CEA3E00063C9F /* ViewController.swift in Sources */,
 				2A814958287CEA3E00063C9F /* AppDelegate.swift in Sources */,
-				2A81496C287CEB1800063C9F /* sign.swift in Sources */,
+				2A81496E287CEE2700063C9F /* GameState.swift in Sources */,
+				2A81496C287CEB1800063C9F /* Sign.swift in Sources */,
 				2A81495A287CEA3E00063C9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
