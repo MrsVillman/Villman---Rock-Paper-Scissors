@@ -5,6 +5,17 @@
 //  Created by Villman, Korrin E on 7/11/22.
 //
 
+func randomSign() -> Sign {
+    let sign = Int.random(in: 0...2)
+        if sign == 0 {
+            return .rock
+    } else if sign == 1 {
+            return .paper
+    } else {
+            return .scissors
+    }
+}
+
 import Foundation
 import Metal
 
