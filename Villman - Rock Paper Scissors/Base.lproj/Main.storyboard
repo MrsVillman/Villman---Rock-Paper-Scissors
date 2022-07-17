@@ -87,11 +87,13 @@
                         <outlet property="opponentLabel" destination="XUA-SU-TPa" id="YHy-C5-PRo"/>
                         <outlet property="paperButton" destination="QM1-cN-ua4" id="DPX-FG-to9"/>
                         <outlet property="paperButtonOutlet" destination="QM1-cN-ua4" id="s3a-y1-hou"/>
+                        <outlet property="playAgainButtonOutlet" destination="iLh-pg-0Je" id="xU2-mI-uVY"/>
                         <outlet property="resultsLabel" destination="XUA-SU-TPa" id="cak-I9-aWh"/>
                         <outlet property="rockButton" destination="bxF-dv-iIf" id="DPU-Bi-Owa"/>
                         <outlet property="rockButtonOutlet" destination="bxF-dv-iIf" id="M6S-PE-A15"/>
                         <outlet property="scissorsButton" destination="Uac-IU-85k" id="SZ1-w6-ejy"/>
                         <outlet property="scissorsButtonOutlet" destination="Uac-IU-85k" id="tjm-Hf-YvB"/>
+                        <outlet property="statusLabel" destination="BQe-ar-gU2" id="WsM-EK-Aki"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
