@@ -25,10 +25,13 @@ class ViewController: UIViewController {
 
 
     @IBAction func rockButtonAction(_ sender: Any) {
+        play(userSign: .rock)
     }
     @IBAction func paperButtonAction(_ sender: Any) {
+        play(userSign: .paper)
     }
     @IBAction func scissorsButtonAction(_ sender: Any) {
+        play(userSign: .scissors)
     }
     
     @IBAction func playAgainButton(_ sender: Any) {
@@ -51,7 +54,9 @@ class ViewController: UIViewController {
             paperButtonOutlet.isHidden = false
             scissorsButtonOutlet.isHidden = false
             
-            
+            rockButtonOutlet.isEnabled = true
+            paperButtonOutlet.isEnabled = true
+            scissorsButtonOutlet.isEnabled = true
             
             case .win:
             view.backgroundColor = .green
@@ -62,8 +67,33 @@ class ViewController: UIViewController {
             case .draw:
             view.backgroundColor = .yellow
         }
+    }
+    
+    func play(userSign: Sign) {
+        let opponentSign = randomSign()
+        let gameState = determineWinner(playerSign: userSign, opponentSign: opponentSign)
         
+        updateUI(gameState: gameState)
+        opponentLabel.text = opponentSign.emoji
         
+        rockButtonOutlet.isHidden = true
+        paperButtonOutlet.isHidden = true
+        scissorsButtonOutlet.isHidden = true
+        
+        rockButtonOutlet.isEnabled = false
+        paperButtonOutlet.isEnabled = false
+        scissorsButtonOutlet.isEnabled = false
+        
+        switch userSign {
+        case .rock:
+            rockButtonOutlet.isHidden = false
+        case .paper:
+            paperButtonOutlet.isHidden = false
+        case .scissors:
+            scissorsButtonOutlet.isHidden = false
+        }
+        
+        playAgainButtonOutlet.isHidden = false
     }
 }
 
